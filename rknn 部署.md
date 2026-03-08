@@ -1,3 +1,32 @@
+# kickpi 教程
+
+源码路径
+```bash
+(SDK)/external/rknpu2/examples/rknn_yolov5_demo
+```
+工具链路径 
+
+`(SDk)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/`
+
+```bash
+(SDK)$ export TOOL_CHAIN=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+(SDK)$ export GCC_COMPILER=(SDK)/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
+```
+
+```bash
+export TOOL_CHAIN=/home/c3h3/build_rk3576_sdk/rk3576-linux/rk3576-linux/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/
+
+export GCC_COMPILER=/home/c3h3/build_rk3576_sdk/rk3576-linux/rk3576-linux/prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu
+```
+
+编译结果
+
+```bash
+lib  model  rknn_yolov5_demo  rknn_yolov5_video_demo
+```
+
+![](./0pic/rknn-yolov5.png)
+
 # 训练开源教程
 
 RKNN-Toolkit2：用于模型转换和性能分析
